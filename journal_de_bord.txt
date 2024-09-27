@@ -1,0 +1,215 @@
+26/09/2024
+Pour l'exercice 1 de PPE, j'ai eu du mal pour trouver la commande qui supprime un dossier (c'est mvdir) et pour déplacer des fichiers dans un autre dossier (c'est mv #nom du fichier ../).
+J'ai trouvé par hasard comment renommer un fichier (c'est mv #nom du fichier actuel #nouveau nom).
+J'ai testé les quelques commandes comme file, cat, hear, tail et less. Je n'arrivais pas à sortir de l'affichage de texte de la commande less (c'est q).
+J'ai compris qu'il fallait toujours se repositionner dans le dossier où l'on veut agir.
+
+Voici l'historique de mon terminal pour l'exercice 1 :
+
+565  clear
+  566  cd
+  567  pwd
+  568  cd/Downloads
+  569  ls/el
+  570  pwd
+  571  cd Téléchargements
+  572  ./
+  573  wget
+  574  ./
+  575  pwd
+  576  cd/Users/el/Téléchargements
+  577  pwd
+  578  /Users/el/Téléchargements
+  579  pwd
+  580  cd/Téléchargements
+  581  mkdir
+  582  exercice_PPE
+  583  pwd
+  584  ./archive-48
+  585  mkdir
+  586  mkdir txt
+  587  mkdir ann
+  588  mkdir img
+  589  mkdir docs
+  590  ./txt
+  591  mkdir 2016 2017 2018
+  592  ../
+  593  mv *.txt txt
+  594  mv *.ann
+  595  mv *.ann ann
+  596  ./txt
+  597  mv *2016 2016
+  598  mv *2016.txt 2016
+  599  mv *.txt2016 2016
+  600  ../
+  601  mv *.jpg img
+  602  mv *ls img
+  603  mv ls img
+  604  mv *.svg img
+  605  mv *.png img
+  606  mv *.jpeg img
+  607  mv *.GIF img
+  608  mv *.gif img
+  609  mv *.JPG img
+  610  mv *.PNG img
+  611  mv 13-Taipei_Taishin_Mars.webp img
+  612  mv EnergieEolienne.docx EnergieEolienne.odt EnergieEolienne.pdf img
+  613  cd img
+  614  mv EnergieEolienne.docx EnergieEolienne.odt EnergieEolienne.pdf docs
+  615  mv EnergieEolienne.docx EnergieEolienne.odt EnergieEolienne.pdf../ docs
+  616  mv EnergieEolienne.docx EnergieEolienne.odt EnergieEolienne.pdf Users/el/archive-48
+  617  ../
+  618  mkdir 2016 2017 2018
+  619  rm 2016 2017 2018
+  620  cd ann
+  621  mkdir 2016 2017 2018
+  622  mv ?2016 2016
+  623  pwd
+  624  ../
+  625  cd img
+  626  mv EnergieEolienne.docx EnergieEolienne.odt EnergieEolienne.pdf ..//
+  627  cd ./
+  628  cd ../
+  629  mv EnergieEolienne.docx EnergieEolienne.odt EnergieEolienne.pdf docs
+  630  rm 2016
+  631  rm 2016 2017 2018
+  632  cd txt
+  633  mv *2018 2018
+  634  mv 2016*.txt 2016
+  635  mv 2017*.txt 2017
+  636  mv 2018*.txt 2018
+  637  ../
+  638  cd txt
+  639  ../ ann
+  640  ../
+  641  cd txt
+  642  ../ cd ann
+  643  ../
+  644  cd ann
+  645  mv 2016*.ann 2016
+  646  mv 2017*.ann 2017
+  647  mv 2018*.ann ./2018
+  648  ../
+  649  cd img
+  650  mkdir Berlin Kyoto Paris Rome Taipei Tokyo Washington
+  651  mv *Berlin* Berlin
+  652  mv *Berlin*.jpg Berlin
+  653  mv *Kyoto* Kyoto
+  654  mv *Paris* Paris
+  655  mv *Rome* Rome
+  656  mv *Taipei* Taipei
+  657  mv *Tokyo* Tokyo
+  658  mv *Washington* Washington
+  659  ../
+  660  ls pwd
+  661  pwd
+  662  ls
+  663  rm -d
+  664  rm 2016
+  665  rmdir 2016
+  666  rmdir 2017
+  667  rmdir 2018
+  668  cd ann/2016
+  669  mkdir 2016_01 2016_02 2016_03 2016_04 2016_05 2016_06 2016_07 2016_08 2016_09 2016_10 2016_11 2016_12
+  670  mv 2016_01*.ann 2016_01
+  671  mv 2016_02*.ann 2016_02
+  672  mv 2016_03*.ann 2016_03
+  673  mv 2016_04*.ann 2016_04
+  674  mv 2016_05*.ann 2016_05
+  675  mv 2016_06*.ann 2016_06
+  676  mv 2016_07*.ann 2016_07
+  677  mv 2016_08*.ann 2016_08
+  678  mv 2016_09*.ann 2016_09
+  679  mv 2016_10*.ann 2016_10
+  680  mv 2016_11*.ann 2016_11
+  681  mv 2016_12*.ann 2016_12
+  682  ../
+  683  cd 2017
+  684  mkdir 2017_01 2017_02 2017_03 2017_04 2017_05 2017_06 2017_07 2017_08 2017_09 2017_10 2\n17_11 2017_12
+  685  mv 2017_12*.ann 2017_12
+  686  rmdir 2
+  687  mv 2017_01*.ann 2017_01
+  688  mv 2017_02*.ann 2017_02
+  689  mv 2017_03*.ann 2017_03
+  690  mv 2017_04*.ann 2017_04
+  691  mv 2017_05*.ann 2017_05
+  692  mv 2017_06*.ann 2017_06
+  693  mv 2017_07*.ann 2017_07
+  694  mv 2017_08*.ann 2017_08
+  695  mv 2017_09*.ann 2017_09
+  696  mv 2017_10*.ann 2017_10
+  697  mkdir 2017_11 2017_12
+  698  mv 2017_11*.ann 2017_11
+  699  mv 2017_12*.ann 2017_12
+  700  mv 2017_09*.ann 2017_09
+  701  ../
+  702  cd 2018
+  703  mkdir 2018_01 2018_02 2018_03 2018_04 2018_05 2018_06 2018_07 2018_08 2018_09 2018_10 2\n18_11 2018_12
+  704  rmdir 2
+  705  mv 2018_09*.ann 2018_09
+  706  mv 2018_01*.ann 2018_01
+  707  mv 2018_02*.ann 2018_02
+  708  mv 2018_03*.ann 2018_03
+  709  mv 2018_04*.ann 2018_04
+  710  mv 2018_05*.ann 2018_05
+  711  mv 2018_06*.ann 2018_06
+  712  mv 2018_07*.ann 2018_07
+  713  mv 2018_08*.ann 2018_08
+  714  mv 2018_09*.ann 2018_09
+  715  mv 2018_10*.ann 2018_10
+  716  mkdir 2018_11 2018_12
+  717  mv 2018_11*.ann 2018_11
+  718  mv 2018_12*.ann 2018_12
+  719  ../
+  720  cd txt/2016
+  721  mkdir 2016_01 2016_02 2016_03 2016_04 2016_05 2016_06 2016_07 2016_08 2016_08 2016_09 2016_10 2016_11 2016_12
+  722  mv 2016_01*.txt 2016_01
+  723  mv 2016_02*.txt 2016_02
+  724  mv 2016_03*.txt 2016_03
+  725  mv 2016_04*.txt 2016_04
+  726  mv 2016_05*.txt 2016_05
+  727  mv 2016_06*.txt 2016_06
+  728  mv 2016_07*.txt 2016_07
+  729  mv 2016_08*.txt 2016_08
+  730  mv 2016_09*.txt 2016_09
+  731  mv 2016_10*.txt 2016_10
+  732  mv 2016_11*.txt 2016_11
+  733  mv 2016_12*.txt 2016_12
+  734  ../
+  735  cd 2017
+  736  mkdir 2017_01 2017_02 2017_03 2017_04 2017_05 2017_06 2017_07 2017_08 2017_08 2017_09 2017_10 2017_11 2017_12
+  737  mv 2017_01*.txt 2017_01
+  738  mv 2017_02*.txt 2017_02
+  739  mv 2017_03*.txt 2017_03
+  740  mv 2017_04*.txt 2017_04
+  741  mv 2017_05*.txt 2017_05
+  742  mv 2017_06*.txt 2017_06
+  743  mv 2017_07*.txt 2017_07
+  744  mv 2017_08*.txt 2017_08
+  745  mv 2017_09*.txt 2017_09
+  746  mv 2017_10*.txt 2017_10
+  747  mv 2017_11*.txt 2017_11
+  748  mv 2017_12*.txt 2017_12
+  749  cd ../2018
+  750  mkdir 2018_01 2018_02 2018_03 2018_04 2018_05 2018_06 2018_07 2018_08 2018_08 2018_09 2018_10 2018_11 2018_12
+  751  mv 2018_01*.txt 2018_01
+  752  mv 2018_02*.txt 2018_02
+  753  mv 2018_03*.txt 2018_03
+  754  mv 2018_04*.txt 2018_04
+  755  mv 2018_05*.txt 2018_05
+  756  mv 2018_06*.txt 2018_06
+  757  mv 2018_07*.txt 2018_07
+  758  mv 2018_08*.txt 2018_08
+  759  mv 2018_09*.txt 2018_09
+  760  mv 2018_10*.txt 2018_10
+  761  mv 2018_11*.txt 2018_11
+  762  mv 2018_12*.txt 2018_12
+  763  ~/
+  764  pwd
+  765  file el
+  766  cd archive-48/txt/2016/2016_01
+  767  file 2016_01_01-001.txt
+  768  cat 2016_01_01-002.txt
+  769  head 2016_01_03-001.txt
+  770  tail 2016_01_07-002.txt
+  771  less 2016_01_18-002.txt
